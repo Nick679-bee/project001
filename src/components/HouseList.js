@@ -22,6 +22,13 @@ const RoomList = () => {
           <li key={room.id}>
             <Link to={`/room/${room.id}`}>
               {room.name} - ${room.price} per night
+              <div className="room-image">
+                <img src={room.image} alt={room.name} />
+              </div>
+              <div className="room-info">
+                <h3>{room.name}</h3>
+                <p>Price: ${room.price} per night</p>
+              </div>
             </Link>
           </li>
         ))}

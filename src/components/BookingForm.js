@@ -30,7 +30,7 @@ const BookingForm = ({ room }) => {
         Guests:
         <input type="number" value={guests} onChange={e => setGuests(e.target.value)} />
       </label>
-      <button onClick={handleBooking}>Book Now</button>
+      <button onClick={handleBooking} className="book-button">Book Now</button>
     </div>
   );
 };
